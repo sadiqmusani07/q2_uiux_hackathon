@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaLeaf, FaAws, FaLyft, FaHooli, FaStripe, FaRedditAlien } from 'react-icons/fa';
+import { FaList,FaLeaf, FaAws, FaLyft, FaHooli, FaStripe, FaRedditAlien } from 'react-icons/fa';
+import { BiSolidCategoryAlt } from 'react-icons/bi';
 
 export default function ShopPage() {
   return (
@@ -45,10 +46,10 @@ export default function ShopPage() {
             {/* Views Text with Icons (centered) */}
             <span className="text-gray-700">Views:</span>
             <span className="p-2 border border-gray-300 rounded">
-              <span>🖼️</span> {/* Replace with actual icon if necessary */}
+              <span><BiSolidCategoryAlt /></span> {/* Replace with actual icon if necessary */}
             </span>
             <span className="p-2 border border-gray-300 rounded">
-              <span>📋</span> {/* Replace with actual icon if necessary */}
+              <span><FaList /></span> {/* Replace with actual icon if necessary */}
             </span>
           </div>
 
@@ -70,32 +71,32 @@ export default function ShopPage() {
         {/* Fourth Div - Logos with React Icons */}
         <div className="flex flex-wrap justify-center space-x-8 gap-8 px-4 mt-8 w-full">
           {/* Hooli Logo with FaHooli Icon */}
-          <div className="flex justify-center items-center mb-4 w-full sm:w-auto">
+          <div className="flex justify-center items-center mb-4 w-full sm:w-auto text-gray-600">
             <FaHooli size={120} />
           </div>
 
           {/* Lyft Logo with FaLyft Icon */}
-          <div className="flex justify-center items-center mb-4 w-full sm:w-auto">
+          <div className="flex justify-center items-center mb-4 w-full sm:w-auto text-gray-600">
             <FaLyft size={120} />
           </div>
 
           {/* Leaf-like Logo */}
-          <div className="flex justify-center items-center mb-4 w-full sm:w-auto">
+          <div className="flex justify-center items-center mb-4 w-full sm:w-auto text-gray-600">
             <FaLeaf size={120} />
           </div>
 
           {/* Stripe Logo with FaStripe Icon */}
-          <div className="flex justify-center items-center mb-4 w-full sm:w-auto">
+          <div className="flex justify-center items-center mb-4 w-full sm:w-auto text-gray-600">
             <FaStripe size={120} />
           </div>
 
           {/* AWS Logo */}
-          <div className="flex justify-center items-center mb-4 w-full sm:w-auto">
+          <div className="flex justify-center items-center mb-4 w-full sm:w-auto text-gray-600">
             <FaAws size={120} />
           </div>
 
           {/* Reddit Alien Logo with FaRedditAlien Icon */}
-          <div className="flex justify-center items-center mb-4 w-full sm:w-auto">
+          <div className="flex justify-center items-center mb-4 w-full sm:w-auto text-gray-600">
             <FaRedditAlien size={120} />
           </div>
         </div>

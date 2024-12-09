@@ -1,8 +1,8 @@
-// src/components/TopBlackLine.tsx
 import { Phone, Mail, Instagram, Youtube, Facebook, Twitter } from 'lucide-react';
-export default function TopGreenLine() {
-    return (
-      <div className="bg-[#23856D] text-white hidden md:flex items-center justify-between px-6 py-2">
+
+export default function TopBlueLine() {
+  return (
+    <div className="bg-[#252B42] text-white hidden md:flex items-center justify-between px-6 py-2">
       {/* This div ensures content stays centered with the same gap on left and right like Navbar */}
       <div className="max-w-screen-xl mx-auto flex justify-between w-full">
         {/* Left Section - Phone and Email */}
@@ -34,5 +34,5 @@ export default function TopGreenLine() {
         </div>
       </div>
     </div>
-    );
-  }
+  );
+}

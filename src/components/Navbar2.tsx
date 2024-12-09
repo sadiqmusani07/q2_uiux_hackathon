@@ -1,10 +1,10 @@
 "use client"; // Ensures this component is run on the client-side
 
-import { FaSearch, FaShoppingCart, FaHeart, FaBars } from 'react-icons/fa';
-import Link from 'next/link';
-import { useState } from 'react';
+import { FaBars } from "react-icons/fa";
+import Link from "next/link";
+import { useState } from "react";
 
-export default function Navbar() {
+export default function Navbar2() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // Toggle menu visibility
@@ -15,7 +15,7 @@ export default function Navbar() {
       {/* Header Section for Desktop */}
       <div className="max-w-screen-xl mx-auto flex justify-between items-center px-6 py-4">
         {/* Logo */}
-        <div className="text-2xl font-bold text-[#252B42]">
+        <div className="text-2xl font-bold text-[#252B42] font-montserrat">
           <Link href="/">Bandage</Link>
         </div>
 
@@ -32,17 +32,17 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Desktop Icons */}
-        <div className="hidden md:flex items-center space-x-4">
-          <span className="text-[#23A6F0] hover:text-blue-600">
-            <FaSearch />
-          </span>
-          <span className="text-[#23A6F0] hover:text-blue-600">
-            <FaShoppingCart />
-          </span>
-          <span className="text-[#23A6F0] hover:text-blue-600">
-            <FaHeart />
-          </span>
+        {/* Desktop Right Section */}
+        <div className="hidden md:flex items-center space-x-6 font-montserrat">
+          <Link
+            href="/login"
+            className="text-[#23A6F0] hover:text-blue-600 text-base font-semibold"
+          >
+            Login
+          </Link>
+          <button className="bg-[#23A6F0] text-white px-4 py-2 rounded-md whitespace-nowrap font-semibold">
+            Become a member →
+          </button>
         </div>
 
         {/* Hamburger Button for Mobile */}
@@ -74,27 +74,21 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Login/Register Link */}
+        {/* Login Link */}
         <div className="text-center py-2">
           <Link
             href="/login"
-            className="block text-[#23A6F0] hover:text-blue-600 text-xl"
+            className="block text-[#23A6F0] hover:text-blue-600 text-xl font-semibold"
           >
-            Login / Register
+            Login
           </Link>
         </div>
 
-        {/* Icons (Mobile) */}
-        <div className="flex justify-center space-x-4 py-4">
-          <span className="text-[#23A6F0] hover:text-blue-600">
-            <FaSearch />
-          </span>
-          <span className="text-[#23A6F0] hover:text-blue-600">
-            <FaShoppingCart />
-          </span>
-          <span className="text-[#23A6F0] hover:text-blue-600">
-            <FaHeart />
-          </span>
+        {/* Become a Member Button */}
+        <div className="flex justify-center py-4">
+          <button className="bg-[#23A6F0] text-white px-4 py-2 rounded-md whitespace-nowrap font-semibold">
+            Become a member →
+          </button>
         </div>
       </div>
     </nav>

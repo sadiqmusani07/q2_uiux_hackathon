@@ -1,38 +1,38 @@
 // src/app/page.tsx
-import Navbar from '@/components/Navbar';
-import TopGreenLine from '@/components/TopGreenLine';
 import Footer from '@/components/Footer';
-import Product from '@/components/Product';
-import ShopPage from '@/components/ShopPage';
+import AboutSection from '@/components/AboutSection';
+import AboutUsSection from '@/components/AboutUsSection';
+import AboutUsLogo from '@/components/AboutUsLogo';
+import GrowSection from '@/components/GrowSection';
 
 export default function About() {
   return (
     <main className="bg-gray-50">
-      {/* Top Green Line */}
+
+      {/* About Section */}
       <section className="relative">
-        <TopGreenLine />
+        <AboutSection />
       </section>
 
-      {/* Navbar */}
+      {/* About Us Section */}
       <section className="relative">
-        <Navbar />
+        <AboutUsSection />
       </section>
 
-      {/* Shop Page */}
+      {/* About Us Logo Section */}
       <section className="relative">
-        <ShopPage />
+        <AboutUsLogo />
+      </section>
+
+      {/* Grow Section */}
+      <section className="relative">
+        <GrowSection />
       </section>
 
       {/* Footer */}
       <section className="relative mt-16">
         <Footer />
       </section>
-
-      {/* Products Card Section */}
-      <section className="relative mt-16">
-        <Product />
-      </section>
-
     </main>
   );
 }

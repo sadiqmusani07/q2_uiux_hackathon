@@ -1,5 +1,5 @@
 // src/app/page.tsx
-import TopBlackLine from '../components/TopBlackLine';
+import TopBlueLine from '../components/TopBlueLine';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import EditorsPick from '../components/EditorsPick';
@@ -14,7 +14,7 @@ export default function Home() {
     <main className="bg-gray-50">
       {/* Top Black Line */}
       <section className="relative">
-        <TopBlackLine />
+        <TopBlueLine />
       </section>
 
       {/* Navbar */}
@@ -23,7 +23,7 @@ export default function Home() {
       </section>
 
       {/* Hero Section */}
-      <section className="relative mt-8">
+      <section className="relative">
         <HeroSection />
       </section>
 
@@ -59,3 +59,4 @@ export default function Home() {
     </main>
   );
 }
+

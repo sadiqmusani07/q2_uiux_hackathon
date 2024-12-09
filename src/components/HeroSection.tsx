@@ -3,14 +3,14 @@ import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <div className="relative w-full h-[716px]">
+    <div className="relative w-full h-[716px] overflow-hidden">
       {/* Background Image */}
       <Image
         src="/assets/HeroSectionGirl.png"
         alt="Main Girl"
         layout="fill" // Ensures the image covers the entire container
         objectFit="cover" // Maintains aspect ratio and fills the container
-        objectPosition="center" // Keeps the image centered
+        objectPosition="top" // Keeps the image positioned at the top to avoid cut-off
         className="z-0"
       />
 
